@@ -1,0 +1,341 @@
+/* COLORS
+Light theme
+ #ffffff = White 
+ #eeeeee = Off White
+ #cdcdcd = Light Grey
+ #ff0055 = Pink
+ #444444 = Dark Grey
+ #000000 = Black
+ Dark theme
+ #eeeeee = Off White 
+ #737373 = Grey
+ #cdcdcd = Light Grey
+ #ff0055 = Pink
+ #444444 = Dark Grey
+
+*/
+
+
+/* *************************************************UNIVERSAL************************************************* */
+*{
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;   }
+html{
+    /* background-color: #ffffff; */
+    background-color: #303030;
+    font-size: 62.5%;   }
+body::-webkit-scrollbar {
+    display: none;  }
+
+/* ***************************************************FRONT*************************************************** */
+div.front{
+    height: 100vh;
+    background-image: url('../IMAGES/header-image.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;   }
+div.front nav{
+    width: 75%;
+    margin: 0rem auto;
+    padding: .6rem; }
+div.front nav h1.logo-text{
+    display: inline;
+    /* color: #ffffff; */
+    color: #eeeeee;
+    /* animation: 2s heartbeat infinite; */
+    letter-spacing: .4rem;
+    font-size: 3rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; }
+div.front nav a{
+    /* color: #eeeeee; */
+    color: #ffffff;
+    letter-spacing: .2rem;
+    float: right;
+    margin: 1rem 1rem 0rem 1rem;
+    text-decoration: none;  }
+div.front nav a:hover{
+    font-weight: bolder;
+    border-top: .1rem solid #eeeeee;
+    border-bottom: .1rem solid #eeeeee;    }
+div.front div.front-card{
+    position: relative;
+    top: 33vh;  }
+div.front div.front-card h1.front-card-h1{
+    /* color: #ffffff; */
+    color: #eeeeee;
+    margin: 1.0rem;
+    text-transform: capitalize;
+    font-size: 3rem;    }
+div.front div.front-card h1.front-card-h1::after{
+    content: '';
+    animation: 80s change_name infinite;
+    text-transform: capitalize;
+}
+p.front-card-p{
+    font-size: .8rem;
+    /* color: #ffffff; */
+    color: #eeeeee;
+    letter-spacing: .11rem; }
+div.front div.front-card button{
+    /* background-color: #ffffff; */
+    background-color: #303030;
+    color: #ff0055;
+    transition: 400ms;
+    font-size: 2.2rem;
+    width: 20rem;
+    height: 4.0rem;
+    padding: .5rem 1.5rem;
+    margin: 1.0rem;
+    /* border: .1rem solid #ffffff; */
+    border: .1rem solid #eeeeee;
+    border-radius: 2.5rem;  }
+div.front div.front-card button:hover{
+    background-color: #ff0055;
+    /* color: #ffffff; */
+    color: #eeeeee;
+    font-size: 1.8rem;
+    letter-spacing: .2rem;
+    height: 4.0rem;
+    padding: .5rem 1.5rem;
+    margin: 1.0rem;
+    border: .1rem solid #ff0055;
+    transition: .3s ease;
+    border-radius: 2.5rem;  }
+    @keyframes change_name{
+        0%{content: 'DELHI'; text-shadow: 0 0 6px #ff0055;}
+        1%{content: 'NOIDA'; text-shadow: 0 0 6px #e7a9be;}
+        2%{content: 'GURUGRAM'; text-shadow: 0 0 6px #73ff00;}
+        3%{content: 'DLF'; text-shadow: 0 0 6px #00ffaa;}
+        4%{content: 'KANPUR'; text-shadow: 0 0 6px #ff0055;}
+        5%{content: 'SRI LANKA'; text-shadow: 0 0 6px #0bc20b;}
+        6%{content: 'AGRA'; text-shadow: 0 0 6px #600bc2;}
+        7%{content: 'TELANGANA'; text-shadow: 0 0 6px #0bc20b;}
+        8%{content: 'MASOORE'; text-shadow: 0 0 6px #62a19c;}
+        9%{content: 'RORKEE'; text-shadow: 0 0 6px #0bc20b;}
+        10%{content: 'NAINITAL'; text-shadow: 0 0 6px #ffe600;}
+        11%{content: 'RANI KHET'; text-shadow: 0 0 6px #ff3086;}
+        12%{content: 'CHAIRAPUNJEE'; text-shadow: 0 0 6px #ffea2e;}
+        13%{content: 'MEGHALAYA'; text-shadow: 0 0 6px #00b7ff;}
+        14%{content: 'GOWERDHAN'; text-shadow: 0 0 6px #0d3a4d;}
+        15%{content: 'MANDOI'; text-shadow: 0 0 6px #00ff62;}
+        16%{content: 'CHANDIGARH'; text-shadow: 0 0 6px #d6c84b;}
+        17%{content: 'ALWAR'; text-shadow: 0 0 6px #00ccff;}
+        18%{content: 'AJMER'; text-shadow: 0 0 6px #8c00ff;}
+        19%{content: 'DWARIKA'; text-shadow: 0 0 6px #b3ff00;}
+        20%{content: 'SIACHIN'; text-shadow: 0 0 6px #ff9100;}
+        21%{content: 'NUH'; text-shadow: 0 0 6px #8c00ff;}
+        22%{content: 'AMRITSAR'; text-shadow: 0 0 6px #00ff15;}
+        23%{content: 'ASSAM'; text-shadow: 0 0 6px #4a4b8a;}
+        24%{content: 'JABALPUR'; text-shadow: 0 0 6px #0b0ec9;}
+        25%{content: 'KHAJURAO'; text-shadow: 0 0 6px #3cff00;}
+        26%{content: 'PALAM KHET'; text-shadow: 0 0 6px #00fff2;}
+        27%{content: 'LUCKNOW'; text-shadow: 0 0 6px #b48339;}
+        28%{content: 'RAKABGANJ'; text-shadow: 0 0 6px #39b495;}
+        29%{content: 'DADAR'; text-shadow: 0 0 6px #8339b4;}
+        30%{content: 'DAMAN'; text-shadow: 0 0 6px #399bb4;}
+        31%{content: 'DIU'; text-shadow: 0 0 6px #393bb4;}
+        32%{content: 'NAGAR'; text-shadow: 0 0 6px #50d46d;}
+        33%{content: 'DARJEELING'; text-shadow: 0 0 6px #14ad36;}
+        34%{content: 'LAKSHADWEEP'; text-shadow: 0 0 6px #504487;}
+        35%{content: 'NICOBAR'; text-shadow: 0 0 6px #50d46d;}
+        36%{content: 'MADHYA PRADESH'; text-shadow: 0 0 6px #ffd46d;}
+        37%{content: 'RAJASTHAN'; text-shadow: 0 0 6px #ffbbff;}
+        38%{content: 'UTTAR PRADESH'; text-shadow: 0 0 6px #fffb00;}
+        39%{content: 'ANDAMAN'; text-shadow: 0 0 6px #ffbb00;}
+        40%{content: 'NAGLOI'; text-shadow: 0 0 6px #00c3ff;}
+        41%{content: 'SHIVPURI'; text-shadow: 0 0 6px #ff0040;}
+        42%{content: 'AYODHYA'; text-shadow: 0 0 6px #71c786;}
+        43%{content: 'DEVIKIPUR'; text-shadow: 0 0 6px #718cc7;}
+        44%{content: 'CHAPPRA'; text-shadow: 0 0 6px #31cc58;}
+        45%{content: 'JODHPUR'; text-shadow: 0 0 6px #133f1e;}
+        46%{content: 'MANIPUR'; text-shadow: 0 0 6px #71c786;}
+        47%{content: 'GOA'; text-shadow: 0 0 6px #e9d41b;}
+        48%{content: 'PANAJI'; text-shadow: 0 0 6px #a71be9;}
+        49%{content: 'GANDHINAGAR'; text-shadow: 0 0 6px #e9a81b;}
+        50%{content: 'GANGAPUR'; text-shadow: 0 0 6px #1ba8e9;}
+        51%{content: 'LUCKNOW'; text-shadow: 0 0 6px #a71be9;}
+        52%{content: 'DAMAN'; text-shadow: 0 0 6px #9b2895;}
+        53%{content: 'DADAR'; text-shadow: 0 0 6px #28509b;}
+        54%{content: 'DARJEELING'; text-shadow: 0 0 6px #9b2875;}
+        55%{content: 'RANIPUR'; text-shadow: 0 0 6px #1db309;}
+        56%{content: 'MUMBAI'; text-shadow: 0 0 6px #9b2875;}
+        57%{content: 'DWEEPPUR'; text-shadow: 0 0 6px #12973a;}
+        58%{content: 'NOIDA'; text-shadow: 0 0 6px #0ef152;}
+        59%{content: 'MAHIPALPUR'; text-shadow: 0 0 6px #148034;}
+        60%{content: 'BANGLORE'; text-shadow: 0 0 6px #12973a;}
+        61%{content: 'DLF-DELHI'; text-shadow: 0 0 6px #125797;}
+        62%{content: 'CHANDNICHOWK'; text-shadow: 0 0 6px #6651af;}
+        63%{content: 'CHENNAI'; text-shadow: 0 0 6px #51afa7;}
+        64%{content: 'KANPUR'; text-shadow: 0 0 6px #af6c51;}
+        64%{content: 'KATMANDU'; text-shadow: 0 0 6px #6651af;}
+        65%{content: 'RAJKOT'; text-shadow: 0 0 6px #4d1ff5;}
+        66%{content: 'KERALA'; text-shadow: 0 0 6px #843df5;}
+        67%{content: 'NAGARKOT'; text-shadow: 0 0 6px #bff3fc;}
+        68%{content: 'NAJAFGARH'; text-shadow: 0 0 6px #f53d3d;}
+        69%{content: 'KERALA'; text-shadow: 0 0 6px #3dd9f5;}
+        70%{content: 'KAJIPUR'; text-shadow: 0 0 6px #52f53d;}
+        71%{content: 'MATHURA'; text-shadow: 0 0 6px #2908a1;}
+        72%{content: 'ARAVALI'; text-shadow: 0 0 6px #8268e2;}
+        73%{content: 'POKHRA'; text-shadow: 0 0 6px #1a113a;}
+        74%{content: 'URI'; text-shadow: 0 0 6px #2900a1;}
+        75%{content: 'HIMALYA'; text-shadow: 0 0 6px #2908a1;}
+        76%{content: 'AMARAVALI'; text-shadow: 0 0 6px #b3ff00;}
+        77%{content: 'ANNAPURA'; text-shadow: 0 0 6px #b30f00;}
+        78%{content: 'VADODRA'; text-shadow: 0 0 6px #b3ff00;}
+        79%{content: 'KATMANDU'; text-shadow: 0 0 6px #b3ff00;}
+        80%{content: 'POKHRAN'; text-shadow: 0 0 6px #b3f000;}
+        81%{content: 'BHUJ'; text-shadow: 0 0 6px #c9cf91;}
+        82%{content: 'GHUWATI'; text-shadow: 0 0 6px #c9c641;}
+        83%{content: 'GANGAWALI'; text-shadow: 0 0 6px #ccc641;}
+        84%{content: 'BRISNA'; text-shadow: 0 0 6px #777509;}
+        85%{content: 'GOLD COAST'; text-shadow: 0 0 6px #c9c641;}
+        86%{content: 'TRIPURA'; text-shadow: 0 0 6px #75bd32;}
+        87%{content: 'BIJWASAN'; text-shadow: 0 0 6px #9132bd;}
+        88%{content: 'ROHTAK'; text-shadow: 0 0 6px #bd8c32;}
+        89%{content: 'PANCHKULA'; text-shadow: 0 0 6px #ff3c00;}
+        90%{content: 'PANINI'; text-shadow: 0 0 6px #9132bd;}
+        91%{content: 'LADAKH'; text-shadow: 0 0 6px #745feb;}
+        92%{content: 'SADAR'; text-shadow: 0 0 6px #5feb89;}
+        93%{content: 'GOL MARKET'; text-shadow: 0 0 6px #eb5feb;}
+        94%{content: 'RING ROAD'; text-shadow: 0 0 6px #aeeb5f;}
+        95%{content: 'PERTH'; text-shadow: 0 0 6px #5feb89;}
+        96%{content: 'KASHMIR'; text-shadow: 0 0 6px #083a74;}
+        97%{content: 'PALAM'; text-shadow: 0 0 6px #688b15;}
+        98%{content: 'KANDHAPUR'; text-shadow: 0 0 6px #154c8b;}
+        99%{content: 'VIP-18'; text-shadow: 0 0 6px #7e4e88;}
+}
+/* @keyframes heartbeat{
+    0%{font-size: 2.4rem;}
+    25%{font-size: 2.7rem;}
+    50%{font-size: 2.3rem;}
+    75%{font-size: 3.1rem;}
+    100%{font-size: 3rem;}
+} */
+/* ***************************************************PLACES*************************************************** */
+div.places{
+    /* background-color: #eeeeee; */
+    background-color: #737373;
+    padding: 2.5vw;    }
+div.places div.place{
+    margin: 3vw auto 6vw auto;
+    box-shadow: 0px 0px 25px 2px #44444490;
+    padding: .5rem;
+    border-radius: 2%;
+    width: 55%;
+    /* color: #000000; */
+    color: #eeeeee;
+    /* background-color: #ffffff; */
+    background-color: #303030;
+}
+div.places div.place::after{
+    content: '';
+    display: block;
+    clear: both;    }
+div.places div.place img{
+    float: left;
+    height: 100%;
+    background-size: cover;
+    border-radius: 2%;
+    width: 100%;    }
+div.places h2{
+    font-size: 2rem;
+    letter-spacing: .2rem;
+    text-transform: uppercase;
+    padding: 1rem;    }
+div.places p{
+    font-size: 1.8rem;
+    letter-spacing: .11rem;
+    padding: 1rem;    }
+div.places button{
+    /* background-color: #ffffff; */
+    background-color: #303030;
+    color: #ff0055;
+    font-size: 1.2rem;
+    height: 3rem;
+    width: 10rem;
+    font-weight: 600;
+    transition: 400ms;
+    padding: .2rem .7rem;
+    margin: 0rem 0rem 1rem 1rem;
+    display: block;
+    border-radius: 22px;
+    margin: .6rem auto;
+    border: .2rem solid #ff0055;
+    outline: none;    }
+div.places a{
+    text-decoration: none;
+}
+div.places button:hover{
+    font-weight: bolder;
+    background: #ff0055;
+    transition: .3s ease;
+    letter-spacing: .2rem;
+    /* border: 0px solid #ffffff; */
+    border: 0px solid #eeeeee;
+    /* color: #ffffff; */
+    color: #eeeeee;
+    cursor: pointer;    }
+
+/* ***************************************************CARDS*************************************************** */
+.color-pink{
+    color: #ff0055;    }
+div.cards{
+    /* background-color: #ffffff; */
+    background-color: #303030;
+}
+div.cards div.inside-card{
+    margin: 3vw auto;
+    width: 67vw;    }
+div.cards div.inside-card::after{
+    content: '';
+    display: block;
+    clear: both;    }
+div.cards div.inside-card div.card1{
+    width: 22vw;
+    display: block;
+    background-color: #444444;
+    float: left;
+    /* color: #ffffff; */
+    color: #eeeeee;
+    padding: 1rem;    }
+div.cards div.inside-card div.card2{
+    width: 22vw;
+    display: block;
+    background-color: #ff0055;
+    float: left;
+    /* color: #ffffff; */
+    color: #eeeeee;
+    padding: 1rem;    }
+div.cards div.inside-card div.card3{
+    width: 22vw;
+    display: block;
+    background-color: #444444;
+    float: left;
+    /* color: #ffffff; */
+    color: #eeeeee;
+    padding: 1rem;    }
+div.cards div.inside-card h2{
+    font-size: 2rem;    }
+div.cards div.inside-card p{
+    font-size: 1.5rem;
+    letter-spacing: .05rem;
+    margin-top: .6rem;    }
+
+/* ***************************************************FOOTER*************************************************** */
+.color-white{
+    /* color: #ffffff; */
+    color: #eeeeee;    }
+footer{
+    background-color: #444444;
+    padding: 1vw;    }
+footer p{
+    /* color: #ffffff; */
+    color: #eeeeee;
+    font-size: 1.5rem;
+    letter-spacing: .05rem;    }
+
+    footer a{
+        color: #ffffff;
+    }

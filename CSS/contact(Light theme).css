@@ -1,0 +1,170 @@
+/* COLORS
+Light theme
+ #ffffff = White 
+ #eeeeee = Off White
+ #cdcdcd = Light Grey
+ #ff0055 = Pink
+ #444444 = Dark Grey
+ #000000 = Black
+ Dark theme
+ #eeeeee = Off White 
+ #737373 = Grey
+ #cdcdcd = Light Grey
+ #ff0055 = Pink
+ #444444 = Dark Grey
+ */
+
+/* *************************************************UNIVERSAL************************************************* */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;   }
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    font-weight: 500;   }
+body{height: 100vh; width: 100vw; position: relative;}
+body::-webkit-scrollbar {
+    display: none;   }
+    
+/* **************************************************NAV BAR************************************************** */
+nav{
+    /* border-bottom: .1rem solid #eeeeee; */
+    border-bottom: none;
+    background-color: #444444;    }
+nav .nav{
+    width: 75%;
+    margin: 0rem auto;
+    padding: .6rem;    }
+nav .nav h1.logo-text{
+    display: inline;
+    /* color: #eeeeee; */
+    color: #ffffff;
+    letter-spacing: .4rem;
+    font-size: 3rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;    }
+nav .nav a{
+    /* color: #eeeeee; */
+    color: #ffffff;
+    letter-spacing: .2rem;
+    float: right;
+    margin: 1rem 1rem 0rem 1rem;
+    text-decoration: none;    }
+nav .nav a:hover{
+    font-weight: bolder;
+    border-top: .1rem solid #ffffff;
+    border-bottom: .1rem solid #ffffff;    }
+
+/* ****************************************************MAIN**************************************************** */
+body{
+    /* background-color: #747474; */
+    background-color: #eeeeee;    }
+div.main{
+    width: 60vw;
+    margin: 1.64rem auto;    }
+div.main::after{
+    content: '';
+    display: block;
+    clear: both;    }
+div.main div.address{
+    width: 49.5%;
+    /* background-color: #444444; */
+    background-color: #ffffff;
+    float: left;
+    padding: 1.2rem 1.2rem;    }
+div.main div.address h2{
+    font-size: 1.8rem;
+    /* color: #eeeeee; */
+    color: #000000;
+    letter-spacing: .12rem;
+    margin: .4rem 0rem;    }
+div.main div.address p{
+    font-size: 1.4rem;
+    /* color: #eeeeee; */
+    color: #000000;
+    letter-spacing: .01rem;
+    margin: .6rem 0rem 1.6rem 0rem;    }
+div.main div.address img{
+    width: 27.5vw;
+    height: auto;    }
+div.main div.contact{
+    width: 49.5%;
+    /* background-color: #444444; */
+    background-color: #ffffff;
+    float: right;    }
+div.main div.contact h1{
+    font-size: 2.8rem;
+    /* color: #eeeeee; */
+    color: #000000;
+    padding: 0rem .6rem;
+    margin: 1.5rem 0rem;
+    border-bottom: .4rem solid #ff0055;    }
+div.main div.contact p{
+    /* color: #eeeeee; */
+    color: #000000;
+    margin: 1rem;    }
+div.main .color-pink{
+    color: #ff0055;    }
+div.main div.contact form{
+    /* color: #eeeeee; */
+    color: #000000;
+    padding: 1rem;    }
+div.main div.contact form input{
+    display: block;
+    /* background-color: #444444; */
+    background-color: none;
+    /* color: #eeeeee; */
+    color: #000000;
+    width: 100%;
+    padding: 0rem .1rem;    }
+div.main div.contact form textarea{
+    display: block;
+    /* background-color: #444444; */
+    background-color: #ffffff;
+    /* color: #eeeeee; */
+    color: #000000;
+    width: 100%;
+    height: 14rem;
+    padding: 0rem .2rem;    }
+div.main div.contact form textarea::-webkit-scrollbar{display: none;}
+div.main div.contact form button{
+    background-color: #ff0055;
+    /* color: #eeeeee; */
+    color: #ffffff;
+    font-size: 1.2rem;
+    height: 3rem;
+    width: 10rem;
+    padding: .2rem .7rem;
+    display: block;
+    transition: 400ms;
+    border: .2rem solid #ff0055;    }
+div.main div.contact form button:hover{
+    font-weight: bolder;
+    /* background-color: #eeeeee; */
+    background-color: #ffffff;
+    letter-spacing: .2rem;
+    border: .3rem solid #ff0055;
+    color: #ff0055;    }
+
+/* ***************************************************FOOTER*************************************************** */
+.color-white{
+    /* color: #eeeeee; */
+    color: #ffffff;    }
+footer{
+    position: fixed;
+    width: 100vw;
+    bottom: 0;
+    bottom: -1.4rem;
+    background-color: #444444;
+    /* border-top: .1rem solid #eeeeee; */
+    border-top: none;
+    padding: 1.3vw;    }
+footer p{
+    /* color: #eeeeee; */
+    color: #ffffff;
+    font-size: 1.5rem;
+    letter-spacing: .05rem;    }
+    footer a{
+        color: #ffffff;
+    }

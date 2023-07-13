@@ -1,0 +1,152 @@
+/* COLORS
+Light theme
+ #ffffff = White 
+ #eeeeee = Off White
+ #cdcdcd = Light Grey
+ #ff0055 = Pink
+ #444444 = Dark Grey
+ #000000 = Black
+ Dark theme
+ #eeeeee = Off White 
+ #737373 = Grey
+ #cdcdcd = Light Grey
+ #ff0055 = Pink
+ #444444 = Dark Grey
+ */
+
+/* *************************************************UNIVERSAL************************************************* */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;    }
+html{
+    font-size: 62.5%;
+    /* color: #eeeeee; */
+    color: #000000;
+    scroll-behavior: smooth;
+    font-weight: 500;    }
+body{height: 100vh; width: 100vw; position: relative;}
+body::-webkit-scrollbar {
+    display: none;    }
+    
+/* **************************************************NAV BAR************************************************** */
+nav{
+    /* border-bottom: .1rem solid #eeeeee; */
+    border-bottom: none;
+    background-color: #444444;    }
+nav .nav{
+    width: 75%;
+    margin: 0rem auto;
+    padding: .6rem;    }
+nav .nav h1.logo-text{
+    display: inline;
+    /* color: #eeeeee; */
+    color: #ffffff;
+    letter-spacing: .4rem;
+    font-size: 3rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;    }
+nav .nav a{
+    /* color: #eeeeee; */
+    color: #ffffff;
+    letter-spacing: .2rem;
+    float: right;
+    margin: 1rem 1rem 0rem 1rem;
+    text-decoration: none;    }
+nav .nav a:hover{
+    font-weight: bolder;
+    border-top: .1rem solid #ffffff;
+    border-bottom: .1rem solid #ffffff;    }
+
+/* ****************************************************MAIN**************************************************** */
+div.main{
+    width: 60vw;
+    margin: 5rem auto;    }
+div.main div.heading{
+    border-bottom: 5px solid #ff0055;
+    margin: 1.5rem 0rem;    }
+div.main div.heading h1{
+    color: #000000;
+    /* color: #eeeeee; */
+    font-size: 3rem;    }
+div.main div.points{
+    margin: 1rem 0rem;
+    padding: 1rem 0rem;    }
+div.main div.points div.point-1{
+    width: 49.5%;
+    display: inline-block;
+    margin: 0rem;    }
+div.main div.points div.point-2{
+    width: 49.5%;
+    display: inline-block;
+    margin: 0rem;    }
+div.main div.points ul{
+    list-style: none;
+    margin-left: 7vw;    }
+div.main div.points ul li .color-pink{
+    color: #ff0055;
+    font-weight: bold;    }
+div.main div.numbers{
+    margin-top: 2rem;    }
+div.main div.numbers div.inside-numbers{
+    width: 24.5%;
+    display: inline-block;    }
+div.main div.numbers div.inside-numbers h1{
+    color: #ff0055;    }
+div.main div.contact{
+    background: linear-gradient(to right,  #ff4444 0%, #ff0055 40%, #ff6a6a 100%);
+    padding: .5rem;
+    margin-top: 1.8rem;    }
+div.main div.contact::after{
+    content: '';
+    display: block;
+    clear: both;    }
+div.main div.contact p{
+    display: inline-block;
+    /* color: #eeeeee; */
+    color: #ffffff;
+    margin-top: 1.3rem;    }
+div.main div.contact button{
+    /* border: 2px solid #eeeeee; */
+    border: 2px solid #ffffff;
+    background: #ff0055;
+    cursor: pointer;
+    font-size: 1.8rem;
+    /* color: #eeeeee; */
+    color: #ffffff;
+    transition: 400ms;
+    padding: 0.8rem 3rem;
+    font-weight: bolder;
+    letter-spacing: 0.2rem;
+    float: right;    }
+div.main div.contact button:hover{
+    /* background: #eeeeee; */
+    background: #ffffff;
+    color: #ff0055;
+    border: 3px solid #ff0055;
+    font-weight: bold;
+    font-size: 2.2rem;
+    letter-spacing: .3rem;
+    padding: 0.4rem 1.3rem;
+}
+
+/* ***************************************************FOOTER*************************************************** */
+.color-white{
+    /* color: #eeeeee; */
+    color: #ffffff;    }
+footer{
+    /* border-top: .1rem solid #eeeeee; */
+    border-top: none;
+    background-color: #444444;
+    position: fixed;
+    width: 100vw;
+    bottom: 0;
+    padding: 1vw;    }
+footer p{
+    /* color: #eeeeee; */
+    color: #ffffff;
+    font-size: 1.5rem;
+    letter-spacing: .05rem;    }
+    footer a{
+        color: #ffffff;
+    }
